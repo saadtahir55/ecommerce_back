@@ -1,7 +1,4 @@
 # Ignore node_modules when push on git
-
 node_modules
-
 # Ignore dotenv when push on git
-
 .env
