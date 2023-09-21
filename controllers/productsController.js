@@ -18,7 +18,17 @@ const productsIdControls = (req, res) => {
     }
 }
 
+const categoriesControls = (req, res) => {
+    try {
+        Products.getCategories(req, res)
+    }
+    catch (error) {
+        res.status(500).send("Intenal Server Error", error);
+    }
+}
+
 module.exports = {
     productsControls,
-    productsIdControls
+    productsIdControls,
+    categoriesControls
 }
